@@ -12,7 +12,7 @@ import { CourseService } from './courses.service';
             </li>
         </ul>
     `,
-    providers:[CourseService]
+    
 })
 
 export class CoursesComponent{

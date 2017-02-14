@@ -9,6 +9,7 @@ var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var app_component_1 = require("./app.component");
 var courses_component_1 = require("./courses.component");
+var courses_service_1 = require("./courses.service");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -18,7 +19,8 @@ AppModule = __decorate([
     core_1.NgModule({
         imports: [platform_browser_1.BrowserModule],
         declarations: [app_component_1.AppComponent, courses_component_1.CoursesComponent],
-        bootstrap: [app_component_1.AppComponent]
+        bootstrap: [app_component_1.AppComponent],
+        providers: [courses_service_1.CourseService]
     })
 ], AppModule);
 exports.AppModule = AppModule;
